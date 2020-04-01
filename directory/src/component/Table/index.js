@@ -3,23 +3,23 @@ import { useTable, useSortBy } from 'react-table';
 import employees from '../../employees';
 
 function Table(){
-    let data = React.useMemo(() => employees);
+    let data = employees;
 
     const columns = React.useMemo(
         () => [
           {
             Header: 'ID',
-            accessor: 'id', // accessor is the "key" in the data
+            accessor: 'id'
           },
           {
             Header: 'Name',
-            accessor: 'name',
+            accessor: 'name'
           },{
             Header: 'Role',
-            accessor: 'role',
+            accessor: 'role'
           },{
             Header: 'Salary',
-            accessor: 'salary',
+            accessor: 'salary'
           }
         ],
         []
@@ -51,11 +51,10 @@ function Table(){
                   {column.render('Header')}
                   {/* Add a sort direction indicator */}
                   <span>
-                    {column.isSorted
-                      ? column.isSortedDesc
+                    {column.isSorted ? column.isSortedDesc
                         ? ' 🔽'
                         : ' 🔼'
-                      : ''}
+                      : '⏹️'}
                   </span>
                 </th>
               ))}

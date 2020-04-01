@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.wrap{
+  width: 100%;
+  text-align: center;
+}
+
+table{
+  margin: 2% auto;
+}
+
+tr:nth-child(odd){
+  background-color: rgb(201, 201, 201);
+}
+
+th:first-of-type{
+  width: 50px;
+}
+th:nth-of-type(2){
+  width: 100px;
+}
+th:nth-of-type(3){
+  width: 180px;
+}
+th:nth-of-type(4){
+  width: 100px;
+}
+
+th{
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  padding: 2%;
+}

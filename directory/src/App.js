@@ -5,7 +5,8 @@ import Search from './component/Search'
 
 function App() {
   return (
-    <div>
+    <div className="wrap">
+      <h1>Employee Directory</h1>
       <Search></Search>
       <Table></Table>
     </div>
