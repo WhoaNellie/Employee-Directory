@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -15,11 +16,28 @@ code {
 #root{
   margin: 0 auto;
   width: 80%;
+  
 }
 
 .wrap{
   width: 100%;
   text-align: center;
+}
+
+.search{
+  width: 50%;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: rgb(220, 236, 255);
+}
+
+.search button{
+  margin-left: 2%;
+  border: none;
+  background-color: #0078d7;
+  height: 22px;
+  color: white;
+  font-weight: bold;
 }
 
 table{
